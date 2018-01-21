@@ -7,11 +7,14 @@
   <ItemGroup>
     <Folder Include="wwwroot\" />
     <Folder Include="WebSockets\" />
+    <Folder Include="Temp\" />
+    <Folder Include="Src\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="2.0.1" />
+    <PackageReference Include="Xabe.FFmpeg" Version="2.3.0" />
   </ItemGroup>
 
   <ItemGroup>

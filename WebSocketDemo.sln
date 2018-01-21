@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketDemo", "WebSocketDemo\WebSocketDemo.csproj", "{76DFB04B-BE13-474A-B8BB-CD1FBB8B5E7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{1DD08E44-7A50-403D-8945-A23994DBCACA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{76DFB04B-BE13-474A-B8BB-CD1FBB8B5E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76DFB04B-BE13-474A-B8BB-CD1FBB8B5E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76DFB04B-BE13-474A-B8BB-CD1FBB8B5E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD08E44-7A50-403D-8945-A23994DBCACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD08E44-7A50-403D-8945-A23994DBCACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD08E44-7A50-403D-8945-A23994DBCACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD08E44-7A50-403D-8945-A23994DBCACA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
