@@ -6,5 +6,10 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="1.50.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="ConnectionFactory.cs" />
+    <Compile Remove="IConnectionFactory.cs" />
   </ItemGroup>
 </Project>
