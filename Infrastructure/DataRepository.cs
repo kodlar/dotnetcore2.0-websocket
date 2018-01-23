@@ -16,7 +16,7 @@ namespace Infrastructure
                 
                 using (IDbConnection db = SqlConnections.ArtTv())
                 {
-                    db.Query<Video>("Select Id From Video").AsList();
+                   lst = db.Query<Video>("Select Id From Video").AsList();
                 }
             }
             catch(Exception ex)

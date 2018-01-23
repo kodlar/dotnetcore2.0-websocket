@@ -2,27 +2,32 @@
 using System.Data;
 using System.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Protocols;
+
 namespace Infrastructure
 {
     public class SqlConnections
     {
-        public IConfiguration Configuration { get; set; }
-
-        public SqlConnections(IConfiguration config)
+        
+        private readonly IConfiguration _configuration;
+        private readonly string _connectionStringKey;
+        public SqlConnections(IConfiguration configuration, string connectionStringKey)
         {
-            Configuration = config;
+            _configuration = configuration;
+            _connectionStringKey = connectionStringKey;
         }
 
-        string ConnectionString()
-        {
-            return Configuration.GetConnectionString("ArtTv");
-        }
+        //string ConnectionString()
+        //{
+        //    return Configuration.GetConnectionString("ArtTv");
+        //}
 
-        public static IDbConnection ArtTv()
+        public IDbConnection ArtTv()
         {
             
             //ConfigurationManager.ConnectionStrings["ArtTv"].ConnectionString
-            return new SqlConnection("Data Source=77.223.152.100;Initial Catalog=Ekavart.tv;User ID=web;Password=1qaz2wsx!");
+            //return new SqlConnection("Data Source=77.223.152.100;Initial Catalog=Ekavart.tv;User ID=web;Password=1qaz2wsx!");
+            return new SqlConnection(_configuration[_connectionStringKey]);
         }
     }
 }
