@@ -1,13 +1,9 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 
-namespace Core.Entitites.Video
+namespace Data.Core.Entitites.Video
 {
     public class VideoTable : EntityBase
-    {
-        public int Id { get; set; }
+    {        
         public int CatId { get; set; }
         public int SubCatId { get; set; }
         public string Title { get; set; }

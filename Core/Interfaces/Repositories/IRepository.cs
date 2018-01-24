@@ -1,10 +1,10 @@
-﻿using Core.Entitites;
+﻿using Data.Core.Entitites;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Text;
 
-namespace Core.Interfaces.Repositories
+
+namespace Data.Core.Interfaces.Repositories
 {
     public interface IRepository<TEntity> where TEntity : EntityBase
     {

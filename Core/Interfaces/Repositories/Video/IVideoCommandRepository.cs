@@ -1,13 +1,11 @@
-﻿using Core.Entitites.Video;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Data.Core.Entitites.Video;
+using Data.Core.Interfaces.Repositories;
 
 namespace Core.Interfaces.Repositories.Video
 {
     public interface IVideoCommandRepository : IRepository<VideoTable>
     {
-        void ExecuteVideo(VideoTable video);
+        void ExecuteVideoViewNumber(VideoTable video);
 
         //Task<Event> ExecuteEvent(Event ev);
     }

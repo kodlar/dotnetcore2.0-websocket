@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Core.Entitites
+﻿namespace Data.Core.Entitites
 {
     public abstract class EntityBase
     {
