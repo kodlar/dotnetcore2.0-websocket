@@ -28,6 +28,6 @@
     <Compile Remove="Controllers\MessagesController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+    <ProjectReference Include="..\Data.Provider.MsSql\Data.Provider.MsSql.csproj" />
   </ItemGroup>
 </Project>

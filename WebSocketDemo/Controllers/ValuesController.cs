@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Core.Interfaces.Repositories.Video;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebSocketDemo.Controllers
@@ -10,16 +11,24 @@ namespace WebSocketDemo.Controllers
     public class ValuesController : Controller
     {
         private NotificationsMessageHandler _notificationsMessageHandler { get; set; }
-        public ValuesController(NotificationsMessageHandler notificationsMessageHandler)
+        private readonly IVideoQueryRepository _videoQueryRepository;
+        public ValuesController(NotificationsMessageHandler notificationsMessageHandler, IVideoQueryRepository videoQueryRepository)
         {
             _notificationsMessageHandler = notificationsMessageHandler;
+            _videoQueryRepository = videoQueryRepository;
         }
         // GET api/values
         [HttpGet]
         public async Task<IEnumerable<string>> Get()
         {
             await _notificationsMessageHandler.SendMessageToAllAsync("burası api values get kısmı");
-            return new string[] { "value1", "value2" };
+            List<string> lst = new List<string>();
+            foreach (var item in _videoQueryRepository.GetAll())
+            {
+                lst.Add(item.Title);
+            }
+            
+            return lst; 
         }
 
         // GET api/values/5

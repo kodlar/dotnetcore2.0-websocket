@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Xabe.FFmpeg;
 
@@ -22,22 +21,7 @@ namespace WebSocketDemo
             FFbase.FFmpegDir = "/usr/local/bin";
         }
 
-        [Route("Data")]
-        [HttpGet]
-        public async Task<List<Video>> GetData()
-        {
-            List<Video> lst = new List<Video>();
-            IDataRepository repo = new DataRepository();
-                lst = await Task.Run(() => repo.GetAll());
-                if(lst != null)
-                {
-                    return lst;
-                }
-
-                return null;
-           }
-
-
+        
 
         [Route("Index")]
         [HttpGet]

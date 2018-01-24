@@ -4,6 +4,7 @@ namespace Data.Core.Entitites.Video
 {
     public class VideoTable : EntityBase
     {        
+    
         public int CatId { get; set; }
         public int SubCatId { get; set; }
         public string Title { get; set; }
@@ -13,13 +14,13 @@ namespace Data.Core.Entitites.Video
         public string Path { get; set; }
         public string Thumbnail { get; set; }
         public string Keywords { get; set; }
-        public DateTime DateTime { get; set; }
+        public DateTime AddDate { get; set; }
         public DateTime ModifiedDate { get; set; }
         public int StatusId { get; set; }
         public string Editor { get; set; }
         public int OrderId { get; set; }
         public bool ISelect { get; set; }
-        public byte SpotResim { get; set; }
+        public byte[] SpotResim { get; set; }
         public string Sure { get; set; }
         public string Folder { get; set; }
         public string TempFile { get; set; }

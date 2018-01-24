@@ -4,11 +4,9 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSocketDemo", "WebSocketDemo\WebSocketDemo.csproj", "{76DFB04B-BE13-474A-B8BB-CD1FBB8B5E7C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{1DD08E44-7A50-403D-8945-A23994DBCACA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.Core", "Core\Data.Core.csproj", "{769446AB-9782-499A-A2EE-F9E0FC2B4C22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Core", "Core\Data.Core.csproj", "{769446AB-9782-499A-A2EE-F9E0FC2B4C22}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Provider.MsSql", "Data.Provider.MsSql\Data.Provider.MsSql.csproj", "{21721378-5A70-4E21-867D-6F80078FE3C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.Provider.MsSql", "Data.Provider.MsSql\Data.Provider.MsSql.csproj", "{21721378-5A70-4E21-867D-6F80078FE3C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +18,6 @@ Global
 		{76DFB04B-BE13-474A-B8BB-CD1FBB8B5E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76DFB04B-BE13-474A-B8BB-CD1FBB8B5E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76DFB04B-BE13-474A-B8BB-CD1FBB8B5E7C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1DD08E44-7A50-403D-8945-A23994DBCACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DD08E44-7A50-403D-8945-A23994DBCACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1DD08E44-7A50-403D-8945-A23994DBCACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DD08E44-7A50-403D-8945-A23994DBCACA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{769446AB-9782-499A-A2EE-F9E0FC2B4C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{769446AB-9782-499A-A2EE-F9E0FC2B4C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{769446AB-9782-499A-A2EE-F9E0FC2B4C22}.Release|Any CPU.ActiveCfg = Release|Any CPU

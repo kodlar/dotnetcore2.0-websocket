@@ -1,10 +1,8 @@
 ﻿using Core.Interfaces.Repositories.Video;
 using Data.Core.Entitites.Video;
 using Microsoft.Extensions.Configuration;
-using System;
 using Dapper;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Linq;
@@ -49,9 +47,11 @@ namespace Data.Provider.MsSql.Repositories.Video
 
             using (IDbConnection db = GetConnection())
             {
+                db.Open();
                 videoList = db.Query<VideoTable>("SELECT TOP 10 * From [dbo].[Video]").ToList();
+                
             }
-
+            
             return videoList;
         }
 

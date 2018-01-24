@@ -29,12 +29,15 @@ namespace Data.Provider.MsSql
         }
         public IDbConnection GetConnection()
         {
-            return new SqlConnection(_configuration[_connectionStringKey]);
+            //_configuration[_connectionStringKey]
+            return new SqlConnection(_configuration.GetConnectionString(_connectionStringKey));
+            
         }
 
         public string GetConnectionString()
         {
-            return _configuration[_connectionStringKey];
+            //return _configuration[_connectionStringKey];
+            return _configuration.GetConnectionString(_connectionStringKey);
         }
         
 
