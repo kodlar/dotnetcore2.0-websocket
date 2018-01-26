@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="ffmpegbins\" />
     <Folder Include="wwwroot\" />
     <Folder Include="WebSockets\" />
     <Folder Include="Temp\" />

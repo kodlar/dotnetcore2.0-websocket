@@ -48,7 +48,7 @@ namespace Data.Provider.MsSql.Repositories.Video
             using (IDbConnection db = GetConnection())
             {
                 db.Open();
-                videoList = db.Query<VideoTable>("SELECT TOP 10 * From [dbo].[Video]").ToList();
+                videoList = db.Query<VideoTable>("SELECT TOP 10 * From [dbo].[Video] Order By Id desc").ToList();
                 
             }
             
